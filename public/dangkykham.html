@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="dangkykham.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng Ký lịch Khám Chữa Bệnh</title>
+  </head>
+  <body>
+    <header>
+      <h1>Đăng Ký lịch Khám Chữa Bệnh</h1>
+    </header>
+    <main>
+      <h3>
+        Vui lòng điền thông tin vào form bên dưới để đăng ký khám bệnh theo yêu
+        cầu
+      </h3>
+
+      <form>
+        <table>
+          <tr>
+            <td>Họ và tên</td>
+            <td><input type="text" name="txtFullName" required /></td>
+          </tr>
+
+          <tr>
+            <td>Email</td>
+            <td><input type="email" name="txtEmail" required /></td>
+          </tr>
+
+          <tr>
+            <td>Ngày Sinh</td>
+            <td><input type="date" name="txtDateOfBirth" required /></td>
+          </tr>
+
+          <tr>
+            <td>Số điện thoại</td>
+            <td><input type="tel" name="txtPhone" required /></td>
+          </tr>
+
+          <tr>
+            <td>Giới tính</td>
+            <td>
+              <select name="txtGender" required>
+                <option value="Gender">Giới tính</option>
+                <option value="Nam">Nam</option>
+                <option value="Nữ">Nữ</option>
+                <option value="Khác">Khác</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Địa chỉ</td>
+            <td>
+              <textarea
+                name="txtAddress"
+                cols="30"
+                rows="1"
+                required
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Chuyên khoa</td>
+            <td>
+              <select name="txtSpecialty"></select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Ngày khám</td>
+            <td><input type="date" name="txtDateForCheckup" required /></td>
+          </tr>
+
+          <tr>
+            <td>Buổi khám</td>
+            <td>
+              <select name="txtDateToCheck" required>
+                <option value="Buổi">Buổi khám</option>
+                <option value="Sáng">Buổi sáng</option>
+                <option value="Chiều">Buổi Chiều</option>
+                <option value="Cả ngày">Cả ngày</option>
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Triệu Chứng</td>
+            <td>
+              <textarea
+                name="Triệu Chứng"
+                cols="60"
+                rows="5"
+                required
+              ></textarea>
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="2" class="submit-btn">
+              <input type="submit" value="Gửi" />
+            </td>
+          </tr>
+
+        </table>
+      </form>
+    </main>
+  </body>
+</html>
