@@ -1,7 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const admin = require('firebase-admin');
-const serviceAccount = require('./demo1-a2b11-firebase-adminsdk-3hglv-405d9dc1b9.json');
+const serviceAccount = JSON.parse(process.env.FIREBASE_SERVICE_ACCOUNT);
 const path = require('path');
 const cors = require('cors');
 
